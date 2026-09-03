@@ -1,62 +1,166 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>陶佳文丨个人主页</title>
-	<meta charset="utf-8" />
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name='description' content='陶佳文，陶佳文个人导航页，个人主页。'>
-	<meta name='keywords' content='陶佳文， 陶佳文主页'>
-	<meta name='robots' content='index,follow'>
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiawen Tao (陶佳文)</title>
+  <meta name="description" content="Jiawen Tao, master's student at Peking University. Research on large language models, data synthesis, and evaluation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <img class="portrait" src="images/profile.jpg" alt="Jiawen Tao" />
+      <div class="identity">
+        <h1>Jiawen Tao <span class="cn">陶佳文</span></h1>
+        <p class="role">Master's student, Peking University</p>
+        <p class="affil">
+          Advised by <a href="https://yangtonghome.github.io/">Prof. Tong Yang</a>
+        </p>
+        <ul class="links">
+          <li><a href="mailto:taojiawen@stu.pku.edu.cn">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=Oi19NPMAAAAJ&amp;hl=en">Google Scholar</a></li>
+          <li><a href="https://github.com/Jaden531">GitHub</a></li>
+        </ul>
+      </div>
+    </header>
 
-<body class="is-preload">
-	<div id="wrapper">
-		<div id="bg"></div>
-		<div id="overlay"></div>
-		<div id="main">
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a master's student at Peking University, advised by
+        <a href="https://yangtonghome.github.io/">Prof. Tong Yang</a>.
+        I received my B.S. in Information and Computing Science from Peking University in 2025,
+        with a dual degree in Economics from the National School of Development.
+      </p>
+      <p>
+        My research focuses on large language models, especially data synthesis for
+        pre-/mid-training and LLM evaluation.
+        I previously interned at Tencent Hunyuan and Moonshot AI (Kimi).
+      </p>
+    </section>
 
-			<!-- Header -->
-			<header id="header">
-				<h1>陶佳文</h1>
-				<p>&nbsp;&bull;&nbsp; A junior majoring in Computer Science at Peking University, China &nbsp;&bull;&nbsp;</p>
-				<nav>
-					<ul>
-<!-- 						<li><a href="https://www.luogu.com.cn/user/69339" target="_blank" class="icon solid fa-blog" title="My Luogu Page"><span -->
-<!-- 									class="label">陶佳文</span></a></li> -->
-						<li><a href="mailto:2100012928@stu.pku.edu.cn" target="_blank" rel="nofollow noopener" class="fa fa-envelope"
-								title="给我发邮件"><span class="label">Email</span></a></li>
-					</ul>
-				</nav>
-			</header>
+    <section>
+      <h2>Publications</h2>
+      <p class="note">Papers listed below are publicly available on arXiv / Google Scholar.</p>
+      <ol class="pubs">
+        <li>
+          <span class="me">Jiawen Tao</span>*, Miao Peng*, Yaoming Li, Xiaokun Yuan, Mengzhou Wu, Wenhan Yu, Guoan Wang, Nuo Chen, Tong Yang, Maxm Pan.
+          <a href="https://arxiv.org/abs/2607.28109">Beyond Rephrasing: Book-Level Organization Improves Synthetic Textbook Data for Mid-Training</a>.
+          <span class="venue">arXiv:2607.28109</span>, 2026.
+          <span class="tag">(* equal contribution)</span>
+          <span class="extra">[<a href="https://arxiv.org/pdf/2607.28109">pdf</a>]</span>
+        </li>
+        <li>
+          Eileen Ye*, <span class="me">Jiawen Tao</span>*, Yaoming Li, Chenxu Liu, Wenhan Yu, Yaxin Fan, Xiaokun Yuan, Mengzhou Wu, Yanbing Jiang, Maxm Pan.
+          <a href="https://arxiv.org/abs/2607.29196">Hy-MultiTurn: A Six-Dimensional Benchmark for Deep Multi-Turn Dialogue Understanding</a>.
+          <span class="venue">arXiv:2607.29196</span>, 2026.
+          <span class="tag">(* equal contribution)</span>
+          <span class="extra">[<a href="https://arxiv.org/pdf/2607.29196">pdf</a>]</span>
+        </li>
+        <li>
+          Zihang Li, Wenjun Liu, Yikun Zong, <span class="me">Jiawen Tao</span>, Siying Dai, Songcheng Ren, Zirui Liu, Yuhang Wang, Yanbing Jiang, Tong Yang.
+          <a href="https://arxiv.org/abs/2603.26668">Bridge-RAG: An Abstract Bridge Tree Based Retrieval Augmented Generation Algorithm</a>.
+          <span class="venue">arXiv:2603.26668</span>, 2026.
+          <span class="extra">[<a href="https://arxiv.org/pdf/2603.26668">pdf</a>]</span>
+        </li>
+        <li>
+          Kimi Team.
+          <a href="https://arxiv.org/abs/2602.02276">Kimi K2.5: Visual Agentic Intelligence</a>.
+          <span class="venue">arXiv:2602.02276</span>, 2026.
+          <span class="extra">[<a href="https://arxiv.org/pdf/2602.02276">pdf</a>]</span>
+        </li>
+        <li>
+          Zhewen Tan, Wenhan Yu, Jianfeng Si, Tongxin Liu, Kaiqi Guan, Huiyan Jin, <span class="me">Jiawen Tao</span>, Xiaokun Yuan, Duohe Ma, Xiangzheng Zhang, Tong Yang, Lin Sun.
+          <a href="https://arxiv.org/abs/2601.18292">TriPlay-RL: Tri-Role Self-Play Reinforcement Learning for LLM Safety Alignment</a>.
+          <span class="venue">ACL 2026</span>.
+          <span class="extra">[<a href="https://arxiv.org/pdf/2601.18292">arXiv</a>] [<a href="https://aclanthology.org/2026.acl-long.1216.pdf">ACL</a>]</span>
+        </li>
+        <li>
+          Kimi Team.
+          <a href="https://arxiv.org/abs/2510.26692">Kimi Linear: An Expressive, Efficient Attention Architecture</a>.
+          <span class="venue">arXiv:2510.26692</span>, 2025.
+          <span class="extra">[<a href="https://arxiv.org/pdf/2510.26692">pdf</a>]</span>
+        </li>
+        <li>
+          Kimi Team.
+          <a href="https://arxiv.org/abs/2507.20534">Kimi K2: Open Agentic Intelligence</a>.
+          <span class="venue">arXiv:2507.20534</span>, 2025.
+          <span class="extra">[<a href="https://arxiv.org/pdf/2507.20534">pdf</a>]</span>
+        </li>
+      </ol>
+    </section>
 
-			<!-- Footer -->
-			<footer id="footer">
-			</footer>
+    <section>
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li>
+          <span class="when">2025.09 – present</span>
+          <strong>Peking University</strong>
+          <div class="place">M.Eng. in Electronic Information, School of Software and Microelectronics</div>
+        </li>
+        <li>
+          <span class="when">2021.09 – 2025.07</span>
+          <strong>Peking University</strong>
+          <div class="place">B.S. in Information and Computing Science, School of Electronics Engineering and Computer Science</div>
+          <div class="place">Dual degree in Economics, National School of Development</div>
+        </li>
+      </ul>
+    </section>
 
-		</div>
-	</div>
-	<script>
-		window.onload = function () { document.body.classList.remove('is-preload'); }
-		window.ontouchmove = function () { return false; }
-		window.onorientationchange = function () { document.body.scrollTop = 0; }
-	</script>
+    <section>
+      <h2>Honors</h2>
+      <ul class="timeline">
+        <li>
+          <span class="when">2025</span>
+          <strong>Beijing Outstanding Graduate</strong>
+          <div class="place">Outstanding Graduate of Peking University</div>
+        </li>
+        <li>
+          <span class="when">2023 – 2024</span>
+          <strong>National Scholarship</strong>
+          <div class="place">Peking University Outstanding Student Pioneer (三好学生标兵)</div>
+        </li>
+        <li>
+          <span class="when">2022 – 2023</span>
+          <strong>China Optics Valley Scholarship</strong>
+          <div class="place">Peking University Outstanding Student (三好学生)</div>
+        </li>
+      </ul>
+    </section>
 
-	<script>
-		console.log("%c%c楠格%chttp://www.nange.cn", "line-height:28px;", "line-height:28px;padding:4px;background:#2ccbe6;color:#FADFA3;font-size:14px;", "padding:4px 4px 4px 2px;background:#ff146d;color:green;line-height:28px;font-size:12px;");
-	</script>
-	<script disable-devtool-auto src='http://fastly.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js'
-		disable-menu='false'></script>
+    <section>
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <span class="when">2025.02 – 2025.12</span>
+          <strong>Tencent Hunyuan</strong>
+          <div class="place">Algorithm Intern, Foundation Model Department, Hunyuan Team</div>
+        </li>
+        <li>
+          <span class="when">2025.02 – 2025.12</span>
+          <strong>Moonshot AI (Kimi)</strong>
+          <div class="place">Algorithm Intern, Scaling Team</div>
+        </li>
+        <li>
+          <span class="when">2024.07 – 2025.01</span>
+          <strong>Tongdeng Asset Management</strong>
+          <div class="place">Quantitative Research Intern</div>
+        </li>
+        <li>
+          <span class="when">2024.03 – present</span>
+          <strong>Peking University</strong>
+          <div class="place">Research intern with Prof. Tong Yang</div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      Last updated September 2026.
+    </footer>
+  </div>
 </body>
-
 </html>

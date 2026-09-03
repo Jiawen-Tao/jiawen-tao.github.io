@@ -1,0 +1,174 @@
+:root {
+  --text: #1c1c1c;
+  --muted: #5a5a5a;
+  --rule: #e7e7e7;
+  --link: #1b4f8a;
+  --link-hover: #0d2f5b;
+  --bg: #fbfbfa;
+  --max: 820px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 "Source Serif 4", "Iowan Old Style", Palatino, "Times New Roman", serif;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 56px 24px 88px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 168px 1fr;
+  gap: 28px;
+  align-items: start;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.portrait {
+  width: 168px;
+  height: 210px;
+  object-fit: cover;
+  object-position: 62% 12%;
+  border-radius: 2px;
+  background: #ddd;
+}
+
+h1 {
+  font-size: 2.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 4px 0 6px;
+  line-height: 1.2;
+}
+
+h1 .cn {
+  font-weight: 600;
+  color: #333;
+}
+
+.role,
+.affil {
+  margin: 0;
+  color: var(--muted);
+}
+
+.affil { margin-top: 2px; }
+
+.links {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+
+h2 {
+  font-size: 1.18rem;
+  margin: 36px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+  font-weight: 700;
+}
+
+section p { margin: 0 0 12px; }
+
+.note {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-bottom: 16px !important;
+}
+
+.pubs,
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pubs { counter-reset: pub; }
+
+.pubs li,
+.timeline li {
+  margin: 0 0 16px;
+  position: relative;
+}
+
+.pubs li {
+  padding-left: 2rem;
+  counter-increment: pub;
+}
+
+.pubs li::before {
+  content: "[" counter(pub) "]";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.me { font-weight: 700; }
+
+.venue { font-style: italic; }
+
+.tag,
+.extra {
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.timeline .when {
+  float: right;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.timeline .place {
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 640px) {
+  .wrap { padding: 28px 18px 64px; }
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+  .portrait {
+    width: 132px;
+    height: 165px;
+  }
+  .timeline .when {
+    float: none;
+    display: block;
+    margin-bottom: 2px;
+  }
+}
