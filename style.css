@@ -60,7 +60,8 @@ h1 {
   line-height: 1.2;
 }
 
-h1 .cn {
+h1 .cn,
+strong .cn {
   font-weight: 600;
   color: #333;
 }
