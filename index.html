@@ -4,12 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TWQKNN4CKB"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-TWQKNN4CKB');
+    window.addEventListener('load', function () {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-TWQKNN4CKB';
+      document.head.appendChild(script);
+    });
   </script>
   <title>Jiawen Tao (陶佳文)</title>
   <meta name="description" content="Jiawen Tao, master's student at Peking University. Research on large language models, data synthesis, and evaluation." />
